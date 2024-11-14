@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #ddd;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .resume-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #333;
+        }
+
+        .resume-section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .section-title i {
+            color: #333;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item h3, .education-item h3 {
+            color: #444;
+        }
+
+        .experience-item p, .education-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .skill-category h3 {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.3rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media print {
+            header, footer {
+                display: none;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">John Doe</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="resume-container">
+            <div class="resume-header">
+                <h1>John Doe</h1>
+                <p>Web Developer | Computer Science Student</p>
+                <p>New York, NY | (123) 456-7890 | john.doe@example.com</p>
+            </div>
+
+            <div class="resume-section">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    Professional Experience
+                </h2>
+                <div class="experience-item">
+                    <h3>Web Development Intern - Tech Solutions Inc.</h3>
+                    <p>June 2023 - Present</p>
+                    <ul>
+                        <li>Developed and maintained client websites using HTML, CSS, and JavaScript</li>
+                        <li>Collaborated with senior developers on large-scale web applications</li>
+                        <li>Implemented responsive design principles for mobile-first approach</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Freelance Web Developer</h3>
+                    <p>January 2023 - Present</p>
+                    <ul>
+                        <li>Created custom websites for small businesses</li>
+                        <li>Managed client relationships and project timelines</li>
+                        <li>Implemented SEO best practices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </h2>
+                <div class="education-item">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p>New York University</p>
+                    <p>Expected Graduation: May 2025</p>
+                    <p>GPA: 3.8/4.0</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    Technical Skills
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <ul class="skill-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <ul class="skill-list">
+                            <li>Git</li>
+                            <li>VS Code</li>
+                            <li>Firebase</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

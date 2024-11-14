@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portfolio - Home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .nav-links a:hover {
+        color: #ddd;
+      }
+
+      main {
+        max-width: 1200px;
+        width: 80vw;
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        align-items: center;
+      }
+
+      .hero {
+        text-align: center;
+        padding-bottom: 3rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .skills {
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        /* margin-top: 3rem; */
+      }
+
+      .skill-card {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile img {
+        border-radius: 50%;
+        width: 70%;
+        margin: auto;
+        /* height: auto; */
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">John Doe</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Coding Student | Web Developer | Problem Solver</p>
+      </section>
+
+      <section class="skills">
+        <div class="skill-card">
+          <h2>Web Development</h2>
+          <p>Proficient in HTML, CSS, JavaScript, and modern frameworks.</p>
+        </div>
+        <div class="skill-card">
+          <h2>Programming</h2>
+          <p>Experience with Python, Java, and C++.</p>
+        </div>
+        <div class="skill-card">
+          <h2>Database Management</h2>
+          <p>Skilled in SQL and MongoDB.</p>
+        </div>
+      </section>
+
+      <section class="profile">
+        <img src="./images/profile.png" alt="" />
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
